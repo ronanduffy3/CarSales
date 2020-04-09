@@ -1,0 +1,33 @@
+<div class ="container-fluid">
+    
+    <div class='form-group'>
+        <form>
+        <div class='row'>
+        <div class="col-sm-2">
+        <label id='marginLabel'>Make</label>
+        <input type="text" name="make" placeholder="Enter Make" #make> 
+        </div>     
+        <div class="col-sm-2">  
+        <label id='marginLabel'>Model</label>
+        <input type="text" name="Model" placeholder="Enter Model" #model>       
+        </div>
+        <div class="col-sm-2">
+        <label id='marginLabel'>Year</label>
+        <input type="text" name="Year" placeholder="Enter Year" #year>
+        </div>  
+        <div class="col-sm-2">
+        <label id='marginLabel'>Image</label>
+        <input type="text" name="imageURL" placeholder="Enter Image Url" #imageUrl>
+    </div>
+    
+        <button type="submit" class='btn btn-primary' (click)="addTheCar(make.value,model.value,year.value,imageUrl.value)">Add the car</button>
+        </div>
+    </form>
+       
+    
+    <app-car *ngFor='let carData of carsData' [carData]="carData"></app-car>
+    </div> 
+        
+
+</div>
+

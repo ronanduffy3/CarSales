@@ -1,0 +1,21 @@
+<div class='container-fluid'>
+    <div class='row border'>
+        <div class="col-3">
+            {{carData.make}}
+        </div>
+        <div class="col-3">
+            {{carData.model}}
+        </div>
+        <div class="col-3">
+            {{carData.year}}
+        </div>
+        <div class="col-3">
+            <img src='{{carData.imageURL}}' [style.width.px]='carImageWidth'/>
+        </div>
+        <div class='col-3'>
+            <button class='col-3' type='submit' (click)="deleteCar(carData.Id)">Remove Car</button>
+        </div>
+    </div>
+    <h1></h1>
+    
+</div>
