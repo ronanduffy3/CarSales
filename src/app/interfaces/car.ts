@@ -1,4 +1,5 @@
 export interface ICar{
+    id: string;
     make: string;
     model: string;
     year: number;
@@ -6,6 +7,7 @@ export interface ICar{
 }
 
 export class Car implements ICar{
+    id: string;
     make: string;
     model: string;
     year: number;
